@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and credentials
+.env
+.env.*
+
+# Jupyter files
+.ipynb_checkpoints/
+
+# Raw and processed datasets
+dataset/raw/*
+dataset/processed/*
+
+# Generated Python cache
+.pytest_cache/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Large generated RFM customer data
+reports/customer_rfm_segments.csv
+
+# Windows system files
+desktop.ini
+Thumbs.db
+.env
