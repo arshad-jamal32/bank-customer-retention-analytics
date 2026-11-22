@@ -209,7 +209,7 @@ An interactive Power BI dashboard was developed with three analytical pages.
 - Total transaction value is approximately ₹1.65 billion.
 - The average transaction value is ₹1,574.34.
 - Approximately 83.76% of customers made only one recorded transaction.
-- Customers with 2–3 transactions account for approximately 16.03% of customers.
+- Customers with 2–5 transactions account for approximately 16.24% of customers.
 - Customers inactive for more than 60 days account for approximately 40.28% of all customers.
 - Mumbai, New Delhi, Bangalore, Gurgaon, and Delhi are among the leading locations by transaction value.
 - 20:00 is the hour with the highest recorded transaction volume.
@@ -236,13 +236,12 @@ These limitations should be considered when interpreting the findings.
 ```text
 bank-customer-retention-analytics/
 │
-├── dataset/
-│   ├── raw/
-│   └── processed/
+├── dataset/                  # Local only (not tracked by Git)
+│   ├── raw/                  # Original Kaggle dataset
+│   └── processed/            # Cleaned dataset/
 │
 ├── python/
 │   ├── inspect_dataset.py
-│   ├── data_profiling.py
 │   ├── clean_dataset.py
 │   ├── validate_dataset.py
 │   ├── customer_segmentation.py
@@ -263,7 +262,6 @@ bank-customer-retention-analytics/
 │
 ├── reports/
 │   ├── visualizations/
-│   ├── customer_rfm_segments.csv
 │   ├── rfm_segment_summary.csv
 │   └── Bank_Customer_Dashboard.pdf
 │
@@ -281,9 +279,11 @@ bank-customer-retention-analytics/
 
 ## Conclusion
 
-This project demonstrates an end-to-end banking analytics workflow, combining SQL, Python, and Power BI to analyze large-scale transaction data and derive customer behavior, value, segmentation, and historical inactivity insights.
+This project demonstrates an end-to-end banking analytics workflow, combining SQL, Python, and Power BI to analyze large-scale transaction data and derive insights into customer behavior, transaction value, segmentation, and historical inactivity patterns.
 
-It showcases practical skills in data cleaning, exploratory data analysis, advanced SQL, customer segmentation, data visualization, and dashboard development.
+It showcases practical skills in data cleaning, exploratory data analysis, advanced SQL, RFM-based customer segmentation, data visualization, and interactive dashboard development.
+
+The analysis also highlights the importance of interpreting customer inactivity as a historical retention-risk proxy rather than confirmed customer churn.
 
 ---
 
